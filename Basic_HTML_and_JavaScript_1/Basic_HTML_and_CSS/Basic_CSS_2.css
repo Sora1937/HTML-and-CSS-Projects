@@ -1,0 +1,9 @@
+p  {
+	color: BlueViolet;
+	background: black;
+	font-size: bold;
+	text-align: left;
+}
+h1 {
+	text-shadow: 2px 2px #ff0000;
+}
