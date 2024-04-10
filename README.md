@@ -4,7 +4,7 @@ This is a display of sample websites that I made using HTML and CSS.
 
 ## Projects
 - [Space Station Site](Basic_HTML_and_JavaScript_1/Basic_HTML_and_CSS/Project-Copy/index1.html)
-- Movie Theater Side
+- [Movie Theater Side](Basic_HTML_and_JavaScript_1/Basic_HTML_and_CSS/Project-Copy/bootstrap4_project/academny_cinemas.html)
 
 
 ### Space Station Site
