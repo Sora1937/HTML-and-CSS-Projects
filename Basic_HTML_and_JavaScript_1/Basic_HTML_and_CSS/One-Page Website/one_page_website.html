@@ -29,125 +29,129 @@
 			</div>
 		<div>
 		<!--END HOME-->
-		
-		<!-- GALLERY -->
-		
-	<section>
-		<div id="gallery">
-			<h1>Gallery</h1>
-			<div>
-			
-				<!-- PHOTO CONTAINER 1 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_1.png" alt="This is a picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 1-->
-				
-				<!-- PHOTO CONTAINER 2 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_2.png" alt="This is a picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 2-->
-				
-				<!-- PHOTO CONTAINER 3 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_3.png" alt="This is a rather large picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 3-->
-				
-				<!-- PHOTO CONTAINER 4 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_4.png" alt="This is a picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 4-->
-				
-				<!-- PHOTO CONTAINER 5 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_5.png" alt="This is an image of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 5-->
-				
-				<!-- PHOTO CONTAINER 6 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_6.png" alt="This is a picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 6-->
-				
-				<!-- PHOTO CONTAINER 7 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_7.png" alt="This is a picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 7-->
-				
-				<!-- PHOTO CONTAINER 8 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_8.png" alt="This is a picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 8-->
-				
-				<!-- PHOTO CONTAINER 9 -->	
-				<div>
-					<div>
-						<img src="./images/CuteDog_9.png" alt="This is a picture of a Dog">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several dogs for adoption, get yours today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 9-->
-				
-			</div>
-		</div>
-	</section>
+	
+		<!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="images/CuteDog1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog_7.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/CuteDog9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+            </div>
+        </div>
+        
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="images/CuteDog1.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="images/CuteDog2.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="images/CuteDog3.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="images/CuteDog4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="images/CuteDog5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="images/CuteDog6.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="images/CuteDog_7.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="images/CuteDog8.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="images/CuteDog9.jpg" style="width:100%">
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/CuteDog1.jpg" onclick="currentSlide(1)" alt="Dog 1">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/CuteDog2.jpg" onclick="currentSlide(2)" alt="Dog 2">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/CuteDog3.jpg" onclick="currentSlide(3)" alt="Dog 3">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/CuteDog4.jpg" onclick="currentSlide(4)" alt="Dog 4">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/CuteDog5.jpg" onclick="currentSlide(5)" alt="Dog 5">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/CuteDog6.jpg" onclick="currentSlide(6)" alt="Dog 6">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/CuteDog_7.png" onclick="currentSlide(7)" alt="Dog 7">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/CuteDog8.jpg" onclick="currentSlide(8)" alt="Dog8">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/CuteDog9.jpg" onclick="currentSlide(9)" alt="Dog 9">
+                </div>
+            </div>
+        </div>
 	<!-- END GALLERY -->
 	
 	<!-- RSVP -->
@@ -185,6 +189,6 @@
 		www.thespacestation.space &nbsp;|&nbsp; &copy; 2024
 	</div>
 	<!-- END FOOTER -->
-	
+	<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
