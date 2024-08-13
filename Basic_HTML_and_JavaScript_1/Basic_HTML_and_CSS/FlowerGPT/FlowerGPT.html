@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="FlowerGPT.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <!-- Navbar -->
+        <div id="nav">
+            <a href="#home">Home</a> |
+            <a href="#roses">Roses</a> |
+            <a href="#tulips">Tulips</a> |
+            <a href="#lilies">Lilies</a> |
+            <a href="#sunflowers">Sunflowers</a> |
+            <a href="#orchids">Orchids</a> |
+            <a href="#about-us">About Us</a> |
+            <a href="#contact-us">Contact Us</a>
+        </div>
+
+        <!-- Home -->
+        <div id="home">
+            <p>Welcome to our floral website where you can explore various beautiful flowers.</p>
+        </div>
+
+        <!-- Roses -->
+        <p>Roses are among the most popular and recognizable flowers in the world, celebrated for their beauty and fragrance...</p>
+        <div id="roses">
+            <img src="Images/rose.jpg" alt="Rose" id="rose">
+        </div>
+
+        <!-- Tulips -->
+        <p>Tulips are vibrant, cup-shaped flowers that come in a variety of colors, including red, yellow, pink, and purple...</p>
+        <div id="tulips">
+            <img src="Images/tulip.jpg" alt="Tulips" id="tulip">
+        </div>
+
+        <!-- Lilies -->
+        <p>Lilies are elegant, trumpet-shaped flowers that come in a variety of colors, including white, pink, orange, and red...</p>
+        <div id="lilies">
+            <img src="Images/lillie.jpg" alt="Lilies" id="lily">
+        </div>
+
+        <!-- Sunflowers -->
+        <p>Sunflowers are easily recognized by their large, bright yellow blooms and tall, sturdy stems...</p>
+        <div id="sunflowers">
+            <img src="Images/sunflower.jpeg" alt="Sunflowers" id="sunflower">
+        </div>
+
+        <!-- Orchids -->
+        <p>Orchids are one of the largest and most diverse plant families, with over 25,000 species and 100,000 hybrids...</p>
+        <div id="orchids">
+            <img src="Images/orchid.jpg" alt="Orchids" id="orchid">
+        </div>
+    
+        <!-- About Us and Contact Us sections (optional) -->
+        <div id="about-us">
+            <p>
+                BlossomTime Ventures is a pioneering company dedicated to exploring the intricate 
+                tapestry of floral history and its impact on human culture. With a mission to blend 
+                historical insights with modern botanical science, BlossomTime Ventures curates 
+                immersive experiences that take visitors on a journey through the evolution of flowers
+                across centuries. From ancient civilizations' reverence for sacred blooms to 
+                contemporary innovations in floral art, their exhibits and educational programs delve 
+                deep into the symbolism, science, and stories that shape our understanding of these 
+                natural wonders.
+                
+                At the heart of BlossomTime Ventures is a team of passionate historians, botanists, 
+                and artists who collaborate to preserve and celebrate the diverse heritage of flowers. 
+                Through interactive workshops, historical floral exhibitions, and cutting-edge research 
+                initiatives, they strive to foster a deeper appreciation for the role of flowers in 
+                human history. Whether through their extensive digital archives or hands-on experiences 
+                in their botanical garden, BlossomTime Ventures is committed to keeping the rich legacy 
+                of flowers alive for future generations to enjoy and learn from.</p>
+        </div>
+
+        <!-- Contact Us -->
+        <h1>Contact Us</h1>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="FlowerGPT.js"></script>
+</body>
+</html>

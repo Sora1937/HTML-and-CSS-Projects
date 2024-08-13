@@ -1,0 +1,146 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+/* Navbar */
+#nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    background-color: #3e8e41;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Wrappers */
+#roses img,
+#tulips img,
+#lilies img,
+#sunflowers img,
+#orchids img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Section Background Colors */
+#home, #roses, #tulips, #lilies, #sunflowers, #orchids, #about-us {
+    background-color: #eaf2e3;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Darker background for more emphasis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#lightbox img {
+    width: 80%; /* Fixed size, but responsive to screen width */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); /* Adding shadow to the image */
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Increased size */
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px; /* Larger font size for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0); /* Smoothly appears */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #3e8e41; /* Slightly darker green on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
