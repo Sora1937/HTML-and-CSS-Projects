@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JSON</title>
+    </head>
+    <body>
+        <p id="myDog0"></p>
+        <p id="myDog1"></p>
+        <p id="myDog2"></p>
+
+        <script>
+            /* JS Dictionary Object */
+            var dog0 = {name: "Dax", breed: "Great Pyrenees", color: "White"};
+            var dog1 = '{"name": "Dax", "breed": "Great Pyrenees", "color": "White"}';
+
+            /* Convert JS objects to string format */
+            var JSONstring0 = JSON.stringify(dog0);
+            document.getElementById("myDog0").innerHTML = JSONstring0;
+
+            var JSONstring1 = JSON.parse(dog1);
+            document.getElementById("myDog1").innerHTML = JSONstring1.name + " the " + 
+            JSONstring1.breed;
+
+            /* Set the data as a key/value pair to be saved locally in your browser */
+            localStorage.setItem("Name", "Dax");
+
+            /* The use the key "Name" to return its value "Dax" */
+            document.getElementById("myDog2").innerHTML = localStorage.getItem("Name");
+        </script>
+    </body>
+</html>

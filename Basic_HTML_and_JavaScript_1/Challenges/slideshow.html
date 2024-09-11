@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Slide Show</title>
+
+        <link rel="stylesheet" href="css/SlideShow.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+
+        <!-- Slide Show -->
+        <div id="slideshow">
+            <div>
+              <img src="images/circleLogo.jpg">
+            </div>
+            <div>
+              <img src="images/Cute_Dog.png">
+            </div>
+            <div>
+              Pretty cool eh? This slide is proof the content can be anything.
+            </div>
+        </div>
+
+        <!-- jQuery for Slide Show -->
+        <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() { 
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+        </script>
+
+        
+    </body>
+</html>

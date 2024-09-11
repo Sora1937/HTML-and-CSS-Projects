@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Challenge</title>
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Image for the Zoom effect -->
+        <img src="images/Cute_Dog.png" id="dog">
+
+        <!-- Extra things to fill the page -->
+        <h1>Hello 1</h1>
+        <hr>
+        <h2>Hello 2</h2>
+        <hr>
+        <h3>Hello 3</h3>
+        <hr>
+        <h4>Hello 4</h4>
+        <hr>
+        <h5>Hello 5</h5>
+        <hr>
+        <h6>Hello 6</h6>
+        <hr>
+        <h1>Hello 1</h1>
+        <hr>
+        <h2>Hello 2</h2>
+        <hr>
+        <h3>Hello 3</h3>
+        <hr>
+        <h4>Hello 4</h4>
+        <hr>
+        <h5>Hello 5</h5>
+        <hr>
+        <h6>Hello 6</h6>
+        
+        <!-- A button to open the popup form -->
+        <button class="open-button" onclick="openForm()">Open Form</button>
+
+        <!-- The Form -->
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1 onclick="validateForm()">Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="number"><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter Phone Number" name="number" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+
+        <script src="JS/main.js"></script>
+    </body>
+</html>
